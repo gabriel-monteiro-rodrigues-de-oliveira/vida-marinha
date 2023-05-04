@@ -38,13 +38,14 @@ header > h1 {
 }
 
 header > p {
+    display: flex;
     margin: auto;
+    padding: 0px 0px 0px 90px;
     max-width: 400px;
     font-family: var(--fonte-padrao);
     font-size: 1.5em;
     text-shadow: 2px 2px 3px var(--cor4);
     color: white;
-    padding: 0px 0px 0px 90px;
 }
 
 main {
@@ -168,12 +169,6 @@ footer > div > p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2em;
     height: 0px;
-}
-
-footer > div > p > abbr {
-    display: inline;
-    margin: auto;
-    padding: 0px 0px 15px 0px;
 }
 
 @media (max-width: 610px){
