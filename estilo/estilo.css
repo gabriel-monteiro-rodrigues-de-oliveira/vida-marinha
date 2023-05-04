@@ -39,21 +39,13 @@ header > h1 {
 
 header > p {
     margin: auto;
-    max-width: 400px;
-    padding: 0px 0px 0px 90px;
+    max-width: 600px;
+    padding: 0px 0px 0px 300px;
     font-family: var(--fonte-padrao);
-    font-size: 1.2em;
+    font-size: 1.5em;
     text-shadow: 2px 2px 3px var(--cor4);
     color: white;
     height: 0px;
-}
-
-@media (max-width: 610px){
-    header > p {
-        margin: 0px;
-        font-size: 1.2em;
-        padding: 0px 0px 0px 120px;
-    }
 }
 
 main {
