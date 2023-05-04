@@ -1,0 +1,193 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+* {
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor1: #0A345C;
+    --cor2: #5CA1E1;
+    --cor3: #187DDB;
+    --cor4: #26425C;
+    --cor5: #1360A8;
+
+    --fonte-padrao: Arial, Helvetica, sans-serif;
+    --fonte-titulo: 'Dancing Script', cursive;
+}
+
+body{
+    background-image: linear-gradient(to right, var(--cor2), var(--cor3));
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor5));
+    height: 150px;
+    box-shadow: 1px 1px 3px var(--cor1);
+}
+
+header > h1 {
+    text-align: center;
+    font-family: var(--fonte-titulo);
+    font-size: 3em;
+    text-shadow: 2px 2px 3px var(--cor4);
+    padding: 0.6em;
+    color: white;
+}
+
+header > p {
+    margin: auto;
+    max-width: 400px;
+    font-family: var(--fonte-padrao);
+    font-size: 1.5em;
+    text-shadow: 2px 2px 3px var(--cor4);
+    color: white;
+}
+
+main {
+    min-width: 300px;
+    max-width: 800px;
+    margin: auto;
+    text-align: justify;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    padding: 0px 0px 0px 0px;
+}
+
+article {
+    background-color: white;
+    border-radius: 0px 10px 0px 10px;
+    box-shadow: 1px 1px 3px var(--cor1);
+}
+
+article > h2, h3, h4 {
+    text-align: center;
+    font-family: var(--fonte-titulo);
+    font-size: 2em;
+    text-shadow: 2px 2px 0.5px var(--cor4);
+    height: 45px;
+    padding: 10px 0px 0px 0px;
+}
+
+article > h2 {
+    background-image: linear-gradient(to right, var(--cor3), transparent);
+}
+
+article > picture > img {
+    width: 100%;
+}
+
+article > h3 {
+    background-image: linear-gradient(to right, var(--cor5), transparent);
+}
+
+.cursor_audio {
+    cursor: pointer;
+    font-size: 0.8em;
+}
+
+article > h4 {
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+}
+
+article > h2:hover, h3:hover, h4:hover {
+    transition: 1.5s;
+    color: var(--cor3);
+}
+
+article > h2:not(:hover), h3:not(:hover), h4:not(:hover){
+    transition: 1.5s;
+    color: black;
+}
+
+article > p {
+    text-indent: 2.5em;
+    padding: 0px 10px 0px 10px;
+}
+
+.p_descricao {
+    font-size: 1em;
+    text-indent: 0em;
+    text-align: center;
+}
+
+strong {
+    color: var(--cor5);
+}
+
+strong:hover {
+    transition: 1.5s;
+    color: var(--cor3);
+}
+
+strong:not(:hover){
+    transition: 1.5s;
+    color: var(--cor5); 
+}
+
+#video {
+    position: relative;
+    padding-bottom: 56.3%
+}
+
+iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+footer {
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor5));
+    height: 64px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    box-shadow: 1px 1px 3px var(--cor1);
+}
+
+footer > div {
+    display: flex;
+}
+
+#posicao_bielito {
+    display: flex;
+    justify-content: flex-start;
+    cursor:pointer;
+}
+
+footer > div > p {
+    display: flex;
+    margin: auto;
+    padding: 0px 0px 15px 0px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    height: 0px;
+}
+
+footer > div > p > abbr {
+    display: inline;
+    margin: auto;
+    padding: 0px 0px 15px 0px;
+}
+
+@media (max-width: 610px){
+    footer > div > p {
+        margin: 0px;
+        font-size: 1.05em;
+    }
+}
+
+footer > div > nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer > div > nav > a > img{
+    display: flex;
+    justify-content: flex-end;
+}
